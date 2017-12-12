@@ -5,15 +5,8 @@ import java.util.HashMap;
 public class FamilyTree {
 	HashMap<String, Person> persons = new HashMap<String, Person>();
 	
-	public static void main(String[] aa){
-		FamilyTree f = new FamilyTree();
-	}
-	
 	FamilyTree() {
 		constructInitialTree();
-		for(Person per : persons.values()){
-			per.printPersonsRelationships(per);
-		}
 	}
 	private void constructInitialTree() {
 		Person shan = new Person("Shan",'M');
